@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #526D82;
+}
+
+
+
+img{
+    filter: invert(1);
+    height: 25px;
+    width: 37px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: #27374D;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+main{
+    min-width: 90vw;
+    min-height: 90vh;
+    
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background: #27374D;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+    gap: 10px;
+    padding: 0px 13px
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    
+    color: gray;
+}
+
+#email{
+    padding: 0px 52px;
+    border: 5px solid white;
+    border-radius: 12px;
+}
+
+.btn{
+    background: #9DB2BF;
+    color: black;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 12px;
+    
+    padding: 9px 15px;
+}
+
+
+.btn:hover{
+    color: #526D82;
+    cursor: pointer;
+}
+
+
+.container{
+    
+    min-height: 90vh;
+    max-width: 80vw;
+    margin: auto;
+    padding: 32px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.container_2{
+    border: 2px solid black;
+    min-height: 50vh;
+    background: #DDE6ED;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 50vw;
+}
+
+.results{
+    padding: 19px 0px;
+    font-size: 13px;
+}
+
+
+#test{
+    font-size: medium;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+
+
+
+/* Existing styles */
+
+/* Add media query for phone screens */
+@media screen and (max-width: 480px) {
+    body {
+      /* Adjust body styles for smaller screens */
+      /* For example: */
+      font-size: 14px;
+    }
+  
+    nav {
+      /* Adjust navigation styles */
+      /* For example: */
+      font-size: 14px;
+      padding: 10px; /* Adjust padding for smaller screens */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    main {
+      /* Adjust main content styles */
+      /* For example: */
+      min-width: 100%;
+      min-height: 85vh;
+    }
+    img{
+        filter: invert(1);
+        height: 20px;
+        width: 37px;
+        padding-bottom: 12px;
+    }
+
+    ul{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    nav ul li{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    
+        gap: 10px;
+        padding: 12px;
+    }
+  
+    footer {
+      /* Adjust footer styles */
+      /* For example: */
+      padding: 10px;
+    }
+  
+    /* Add more media query adjustments as needed */
+  }
+  
