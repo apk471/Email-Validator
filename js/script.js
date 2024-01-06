@@ -6,12 +6,12 @@ element.addEventListener("click", myFunction);
 async function myFunction(e) {
   console.log("Clicked");
   e.preventDefault();
-  // const apikey = "ema_live_qJoaLHjuQ0v6LKzk2wkhuv690s5KlCEJkLwdzkzq";
+  const apikey = "YOUR API KEY";
   let email = document.getElementById("email").value;
   let str = ``;
 
   try {
-    let url = `https://api.emailvalidation.io/v1/info?apikey=ema_live_qJoaLHjuQ0v6LKzk2wkhuv690s5KlCEJkLwdzkzq&email=${email}`;
+    let url = `https://api.emailvalidation.io/v1/info?apikey=${apikey}&email=${email}`;
     let res = await fetch(url);
     let result = await res.json();
 
